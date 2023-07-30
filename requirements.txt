@@ -1,6 +1,6 @@
 Flask
 pandas
-scikit-learn==0.22.2
+scikit-learn==0.22.1
 pylint
 Jinja2
 MarkupSafe
