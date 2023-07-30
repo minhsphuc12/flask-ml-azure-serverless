@@ -53,7 +53,7 @@ source ~/.flask-ml-azure/bin/activate
 
 `az webapp up -n <your-appservice>`
 
-![3-flask-ml-service](https://user-images.githubusercontent.com/58792/89557009-2e709e00-d7e0-11ea-9b31-9090c8067a10.png)
+![3-flask-ml-service23](https://user-images.githubusercontent.com/58792/89557009-2e709e00-d7e0-11ea-9b31-9090c8067a10.png)
 
 4. Verify deployed application works by browsing to deployed url: `https://<your-appservice>.azurewebsites.net/`
 
@@ -103,13 +103,13 @@ variables:
   azureServiceConnectionId: '<youridhere>'
   
   # Web app name
-  webAppName: 'flask-ml-service'
+  webAppName: 'flask-ml-service23'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 
   # Environment name
-  environmentName: 'flask-ml-service'
+  environmentName: 'flask-ml-service23'
 
   # Project root folder. Point to the folder containing manage.py file.
   projectRoot: $(System.DefaultWorkingDirectory)
@@ -172,7 +172,7 @@ stages:
             displayName: 'Use Python version'
 
           - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : flask-ml-service'
+            displayName: 'Deploy Azure Web App : flask-ml-service23'
             inputs:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
